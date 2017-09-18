@@ -1,0 +1,483 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+div{
+	position: absolute;
+}
+
+/* font face */
+@font-face {
+  font-family: 'SegoePro-SemiLight';
+  src: url('../fonts/SegoePro-SemiLight.woff') format('woff'), 
+  url('../fonts/SegoePro-SemiLight.ttf')  format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body{
+	font-family: 'SegoePro-SemiLight', "Times New Roman", Times, serif;
+	font-size: 21px;
+	color: #fff;
+	letter-spacing: -0.015em;
+	line-height: 22px;
+
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;	
+
+	-webkit-font-smoothing: antialiased;
+}
+
+/* main container */
+.container{
+	width: 500px;
+	height: 250px;
+	font-family: inherit;
+	display: none;
+	overflow: hidden;
+}
+/* fallback */
+#fallback{
+	width: 100%;
+	height: 100%;
+	background: url('../backup.jpg') no-repeat;
+}
+
+/* ------------------------------------------------- */
+/* collpse panel all styles */
+
+.banner {
+	width: 300px;
+	height: 250px;	
+	overflow: hidden;
+}
+
+#banner-bg{
+	width: 100%;
+	height: 100%;
+	background: url('../images/300x250-bg.jpg') no-repeat;
+	background-size: contain;
+	transform: scale(1);
+}
+
+.banner-bg-anim1{
+	animation: zoom-in 0.1s forwards;
+}
+
+#bg-grad{
+
+	width: 100%;
+	height: 100%;
+	top: 0;
+
+	background: rgba(0,0,0,0.5);
+background: -moz-linear-gradient(top, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.21) 34%, rgba(237,237,237,0) 100%);
+background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(0,0,0,0.5)), color-stop(34%, rgba(0,0,0,0.21)), color-stop(100%, rgba(237,237,237,0)));
+background: -webkit-linear-gradient(top, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.21) 34%, rgba(237,237,237,0) 100%);
+background: -o-linear-gradient(top, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.21) 34%, rgba(237,237,237,0) 100%);
+background: -ms-linear-gradient(top, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.21) 34%, rgba(237,237,237,0) 100%);
+background: linear-gradient(to bottom, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.21) 34%, rgba(237,237,237,0) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#ededed', GradientType=0 );
+}
+
+
+/* microsoft logo */
+#ms-logo{
+	width: 80px;
+	height: 18px;
+	right: 15px;
+	bottom: 15px;
+	background: url('../images/ms_logo_exp.png') no-repeat;
+	background-size: contain;
+}
+
+/* shapes for animaing frames */
+#shape1{
+	width: 600px;
+	height: 250px;
+	left: -630px;
+	background-color: #0078d7;
+	transform: translateX(-300px) skewX(-30deg);
+
+	/* animations */
+	animation: shape-in 0.5s forwards;
+}
+
+#shape2{
+	width: 600px;
+	height: 250px;
+	left: 210px;
+	background-color: #00b294;
+	transform: translateX(-300px) skewX(-30deg);
+}
+
+.shape2-anim1{
+	animation: shape-in 0.5s forwards;
+}
+
+.shape2-anim2{
+	animation: shape-out 0.5s forwards;
+}
+
+.shape2-anim3{
+	animation: shape2-fill 0.5s forwards;
+}
+
+
+#shape3{
+	width: 600px;
+	height: 250px;
+	left: 372px;
+	background-color: #0078d7;
+	transform: translateX(0px) skewX(-30deg);
+}
+
+.shape3-anim1{
+	animation: shape3-in 0.5s forwards;
+}
+
+.shape3-anim2{
+	animation: shape3-fill 0.5s forwards;
+}
+
+
+
+#banner-content{
+	border: 1px solid #000;
+	box-sizing: border-box;
+	overflow: hidden;
+	width: 100%;
+	height: 100%;
+}
+
+
+/* all copy text */
+#copy1{
+	top: 10px;
+	left: 40px;
+	width: 100%;
+	font-size: 20px;
+	line-height: 22px;	
+}
+
+#copy1a, #copy1b{
+	opacity: 0;
+}
+
+.copy1a-anim1{
+	animation: fade-in 0.3s both;
+}
+
+.copy1a-anim2{
+	animation: fade-out 0.1s forwards;
+}
+
+.copy1b-anim1{
+	animation: fade-in 0.5s both;
+}
+
+.copy1b-anim2{
+	animation: fade-out 0.1s forwards;
+}
+
+
+#copy2{
+	top: 10px;
+	left: 60px;
+	opacity: 0;
+}
+
+.copy2-anim1{
+	animation: fade-in 0.3s both;
+}
+
+#copy3{
+	top: 100px;
+	width: 100%;
+	text-align: center;
+	opacity: 0;
+}
+
+.copy3-anim1{
+	animation: fade-in 0.5s both;	
+}
+
+.copy3-anim2{
+	animation: fade-out 0.5s forwards;	
+}
+
+/* win 10 logo */
+#win10{
+	width: 190px;
+	height: 34px;
+	top: 41px;
+	left: 55px;
+	background-color: #0078d7;
+	overflow: hidden;	
+	opacity: 0;
+}
+
+.win10-anim1{
+	animation: fade-in 0.5s both;
+}
+
+#win-icon{
+	width: 190px;
+	height: 34px;
+	background: url('../images/win-logo.png') no-repeat #0079D7;
+	background-position: top right;
+}
+
+.win-icon-anim1{
+	animation: win10-slide 0.5s both;
+}
+
+#win-txt{
+	width: 146px;
+	height: 22px;
+	top: 5px;
+	right: 0;
+	background: url('../images/win10.png') no-repeat;
+}
+
+/* last copy */
+#copy4{
+	top: 110px;
+	width: 100%;
+	text-align: center;
+	opacity: 0;
+}
+
+.copy4-anim1{
+	animation: fade-in 0.5s both;
+}
+
+
+/* cta / expand btn */
+#see-more{
+	font-size: 16px;
+	right: 10px;
+	bottom: 10px;
+	cursor: pointer;
+	opacity: 0;
+}
+
+.see-more-anim1{
+	animation: fade-in 0.5s both;
+}
+
+.arrow-anim{
+	/* animations */
+	animation: arrow-move 0.5s both;
+}
+
+
+/* ------------------------------------------------- */
+/* expand panel all styles */
+
+.panel{
+	border: 1px solid #000;
+	box-sizing: border-box;
+	overflow: hidden;
+	width: 500px;
+	height: 250px;	
+	display: none;
+}
+
+.panel-bg{
+	width: 100%;
+	height: 100%;
+	background: rgba(255,255,255,0.5);
+}
+
+.panel-content{
+	display: none;
+	width: 100%;
+	height: 100%;
+	background: url('../images/exp-frame.jpg') no-repeat;
+}
+
+.panel-video{
+	width: 100%;
+	background-color: #000;
+	cursor: pointer;
+}
+
+#video{
+	width: 100%;
+	position: absolute;
+	height: auto !important;
+}
+
+.ms-logo-exp{
+	width: 95px;
+	height: 21px;
+	right: 15px;
+	top: 185px;
+	background: url('../images/ms_logo_exp.png') no-repeat;	
+	background-size: contain;
+}
+
+/* shapes */
+.shape4{
+	width: 600px;
+	height: 250px;
+	left: -100px;
+	background-color: #0078d7;
+
+	/* animations */
+	animation: shape4-move 0.5s both;	
+}
+
+/* panel copys */
+
+.copy5{
+	font-size: 11px;
+	right: 15px;
+	bottom: 5px;
+
+	/* animations */
+	animation: fade-in 0.5s 1s both;		
+}
+
+.copy6{
+	left: 20px;
+	top: 140px;
+	font-size: 20px;
+
+	/* animations */
+	animation: fade-in 0.5s 1s both;		
+}
+
+/* windows 10 velki */
+
+.win10-exp{
+	width: 190px;
+	height: 34px;
+	top: 95px;
+	left: 20px;
+	overflow: hidden;
+
+	/* animations */
+	animation: fade-in 0.5s 0.5s both;	
+}
+
+.win-icon-exp{
+	width: 190px;
+	height: 34px;
+	background: url('../images/win-logo.png') no-repeat;
+	background-position: top right;
+
+	/* animations */
+	animation: win10-slide 0.5s 1s both;	
+}
+
+.win-txt-box{
+	width: 34px;
+	height: 34px;
+	right: 0;
+	overflow: hidden;
+
+	/* animations */
+	animation: win10-exp 0.5s 1s both;	
+}
+
+.win-txt-exp{
+	width: 146px;
+	height: 22px;
+	top: 5px;
+	right: 0;
+	background: url('../images/win10.png') no-repeat;
+}
+
+/* panel cta */
+
+.cta{
+	top: 120px;
+	right: 15px;
+	border: 1px solid #fff;
+	padding: 2px 10px !important;
+	font-size: 15px;
+	color: #fff;
+	cursor: pointer;
+
+	/* transitions */
+	transition: all 0.3s;
+
+	/* animations */
+	animation: fade-in 0.5s 1s both;		
+}
+
+.cta-hover{
+	background-color: #fff;
+	color: #0078d7;
+}
+
+#audio-btn{
+	width: 19px;
+	height: 19px;
+	left: 10px;
+	bottom: 10px;
+	cursor: pointer;
+}
+
+.mute{
+	background: url('../images/mute.png') no-repeat;
+}
+
+.unmute{
+	background: url('../images/unmute.png') no-repeat;
+}
+
+#play-btn{
+	width: 75px;
+	height: 75px;
+	left: 212px;
+	top: 87px;
+	opacity: 0;
+	cursor: pointer;
+	transition: all 0.5s;
+}
+
+.play{
+	background: url('../images/play.png') no-repeat;
+}
+
+.pause{
+	background: url('../images/pause.png') no-repeat;
+}
+
+#replay-btn{
+	width: 15px;
+	height: 15px;
+	left: 10px;
+	bottom: 10px;
+	display: none;
+	background: url('../images/replay.png') no-repeat;
+	background-size: contain;
+	cursor: pointer;
+
+	/* transitions */
+	transition: all 0.3s;	
+}
+
+#replay-btn:hover{
+	transform: rotate(-180deg);
+}
+
+#close-btn{
+	width: 52px;
+	height: 19px;
+	right: 10px;
+	top: 10px;
+	background: url('../images/close.png') no-repeat;
+	cursor: pointer;
+}
+
+#banner-exit, #panel-exit{
+	width: 100%;
+	height: 100%;
+	cursor: pointer;
+}

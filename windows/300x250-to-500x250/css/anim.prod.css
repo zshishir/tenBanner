@@ -1,0 +1,76 @@
+/* all keyframes declarations */
+
+/* shape animation */
+
+@keyframes shape-in{
+	from { transform: translateX(-300px) skewX(-30deg); }
+	to   { transform: translateX(0px) skewX(-30deg); }
+}
+
+@keyframes shape-out{
+	from { transform: translateX(0px) skewX(-30deg); }
+	to   { transform: translateX(-840px) skewX(-30deg); }
+}
+
+@keyframes shape3-in{
+	from { transform: translateX(0px) skewX(-30deg); }
+	to   { transform: translateX(-120px) skewX(-30deg); }
+}
+
+@keyframes shape2-fill{
+	from { transform: translateX(-840px) skewX(-30deg); }
+	to   { background-color: #0078d7; transform: translateX(-650px) skewX(-30deg); }
+}
+
+@keyframes shape3-fill{
+	from { transform: translateX(-120px) skewX(-30deg); }
+	to   { background-color: #0078d7; transform: translateX(-250px) skewX(-30deg); }
+}
+
+
+/* fade animations */
+
+@keyframes fade-in{
+	from { opacity: 0; }
+	to   { opacity: 1; }
+}
+
+@keyframes fade-out{
+	from { opacity: 1; }
+	to   { opacity: 0; }
+}
+
+/* window 10 animations */
+
+@keyframes win10-slide{
+	from { transform: translateX(0px); }
+	to   { transform: translateX(-156px); }
+}
+
+/* win 10 expand for the expanded version */
+@keyframes win10-exp{
+	from { width: 34px; }
+	to   { width: 146px; }
+}
+
+/* bg zoom */
+
+@keyframes zoom-in{
+	from { transform: scale(1); }
+	to   { transform: scale(1.1); }
+}
+
+/* arrow anim */
+@keyframes arrow-move{
+	0% 	 { transform: translateY(0px); }
+	50%  { transform: translateY(-5px); }
+	100% { transform: translateY(0px); }
+}
+
+
+/* ------------------------------------------------- */
+
+@keyframes shape4-move{
+	from { transform: translateX(50px) skewX(-30deg); }
+	to   { transform: translateX(450px) skewX(-30deg); }	
+}

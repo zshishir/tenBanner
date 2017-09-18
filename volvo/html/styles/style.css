@@ -1,0 +1,129 @@
+/*-------------------------------------
+    Reset
+---------------------------------------*/
+*{
+    margin:0;
+    padding: 0;
+    position: absolute;
+  
+    -webkit-border: none;
+      border: none;
+}
+
+#banner{
+    position: absolute;
+    -webkit-border: none;
+       border:none;
+}
+#banner br{
+    position: static;
+}
+img{
+
+     -webkit-border: none;
+       border:none;
+}
+/*-------------------------------------
+    Layout
+---------------------------------------*/
+#ad {
+    display: block;
+    border: rgb(145, 153, 153) 1px solid;
+    overflow: hidden;
+    width: 298px;
+    height: 248px;
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+#banner {
+    position: absolute;
+    display: block;
+    width: 298px;
+    height: 248px;
+    background-color: #000000;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.clickthrough {
+    height: 216px;
+    width: 300px;
+    cursor: pointer;
+    z-index: 999;
+    background:transparent;
+
+}
+.label {
+    font-size: 14px;
+    top: 65px;
+}
+.collapsed .buttons {
+    bottom: 30px;
+    left: 10px;
+}
+.label {
+    font-size: 10px;
+    top: 33px;
+}
+#banner {
+    background-size: auto 20px;
+}
+#video-container {
+    height: 250px;
+    position: absolute;
+    width: 300px;
+    visibility: hidden;
+    opacity: 1;
+}
+.centered {
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+video {
+    height: 100%;
+    width: 100%;
+}
+.ios-center-video-controls video::-webkit-media-controls {
+    min-width: 0;
+}
+.sdk .sdk-video-player {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    background: url("../images/poster.jpg");
+    background-size: cover;
+}
+.sdk .sdk-video-player-button {
+    cursor: pointer;
+    position: absolute;
+    width: 55px;
+    height: 55px;
+    background: url("../images/play.png") no-repeat scroll 0px 0px;
+    background-size: cover;
+}
+
+#cta{
+    /*display: none;*/
+   /* background:url("../images/cta.png") no-repeat scroll 0px 0px;*/
+    opacity:0;
+   /* transform: scale(.5);
+    top:30px;*/
+
+}
+
+#sky{
+    /*display: none;*/
+   /* background:url("../images/cta.png") no-repeat scroll 0px 0px;*/
+    opacity:0;
+    z-index: 101;
+   /* transform: scale(.5);
+    top:30px;*/
+
+}

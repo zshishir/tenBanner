@@ -1,0 +1,94 @@
+@charset "UTF-8";
+/* CSS Document */
+
+@charset "UTF-8";
+/* CSS Document */
+
+/* Default style, feel free to remove if not needed. */
+body, body * {
+	vertical-align: baseline;
+	border: 0;
+	outline: 0;
+	padding: 0;
+	margin: 0;
+}
+
+#container_dc {
+	position: absolute;
+	width: 298px;
+	height: 248px;
+	border:1px solid #666666;
+	top: 0px;
+	left: 0px;
+	margin: auto;
+	
+	overflow:hidden;
+}
+
+#content_dc {
+	position: absolute;
+	width: 298px;
+	height: 248px;
+
+	top: 0px;
+	left: 0px;
+	background-color: #FFF;
+}
+
+/* Invisible button for background clickthrough. */
+#background_exit_dc {
+	position: absolute;
+	width: 298px;
+	height: 248px;
+
+	top: 0px;
+	left: 0px;
+	cursor: pointer;
+	opacity: 0;
+}
+
+
+:focus {outline:none;}
+::-moz-focus-inner {border:0;}
+
+img,div,i {
+  position:absolute;
+  display:block;
+}
+
+#image {
+ -webkit-transform: scale(1);
+ -moz-transform: scale(1);
+ -o-transform: scale(1);
+ -ms-transform: scale(1);
+ transform: scale(1);
+ opacity:0;
+ left:-100px;
+ top:-100px;
+}
+
+#circle {
+ top:25px;
+ left:-22px;
+ 
+ -webkit-transform: scale(.2);
+ -moz-transform: scale(.2);
+ -o-transform: scale(.2);
+ -ms-transform: scale(.2);
+ transform: scale(.2);
+ 
+ opacity:0;
+}
+
+#iwant,#what,#live {
+ opacity:0;
+ left:-14px;
+}
+
+#logo,#id,#wh1 {
+  bottom:-200px;
+}
+
+#hoyalux, #line, #click {
+  opacity: 0;
+}

@@ -1,0 +1,418 @@
+/*-------------------------------------
+    Reset
+---------------------------------------*/
+
+/******Basic settings**********/
+*{
+    margin: 0;
+    padding: 0;
+}
+html {
+    box-sizing: border-box;
+  text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%; 
+  -webkit-text-size-adjust: 100%; 
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+img{
+  border: 0px;
+}
+a{
+  text-decoration: none;
+}
+body{
+    font-family: 'Roboto', sans-serif; color: #444444;
+}
+.font-preloader{
+  font-family:'Roboto';
+  visibility:hidden;
+  width:0; 
+  height:0;
+}
+#frame_one, #frame_two,#frame_three, #frame_four {
+  width: 100%;
+  height: 100%;
+}
+
+/*-------------------------------------
+    Layout
+---------------------------------------*/
+
+#ad {
+  -moz-user-select: -moz-none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+#banner {
+  position: absolute;
+  background: #eeeeee;
+  display: block;
+  width: 1000px;
+  height: 250px;
+  overflow: hidden;
+  cursor: pointer;
+  visibility: hidden; 
+  border: 1px solid #444444;
+  -webkit-box-sizing: border-box;  
+          box-sizing: border-box;  
+}
+
+#clickTAG {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  cursor: pointer;
+  top:0;
+  left: 0;
+}
+.ie-fallback {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+}
+
+sub, sup { 
+ font-size: 60%;
+ line-height: 0; 
+ position: relative;
+}
+/*-------------------------------------
+    Frame One Duration: 2.75s
+---------------------------------------*/
+.bckgrnd {
+	top:-1px;
+	left:-1px;
+	position:absolute;
+  z-index: 0;
+}
+
+.laptop-01{
+	top:50px;
+	left:100px;
+	position:absolute;
+	
+}
+.dell-logo {
+  left:20px;
+  bottom:20px;
+  position: absolute;
+}
+.vendor-logo {
+  position: absolute;
+  bottom:20px;
+  right:20px;
+  border:0px red solid;
+  
+}
+
+.funding-text {
+  position: absolute;
+  width:280px;
+  bottom:17px;
+  right:105px;
+  font-size: 16px;
+  line-height: 18px;
+  text-align:right;
+  color: #444444;
+}
+
+/* .funding-text sup {
+  font-size: 12px;
+  line-height: 8px;
+} */
+
+.frame1_text1 {
+  position: absolute;
+  width:100%;
+  top:90px;	
+  left:190px;
+  font-size:22px;
+  line-height:26px;
+  letter-spacing: 0.1em;
+  text-align:center;
+  color: #444444;
+}
+
+
+
+/*-------------------------------------
+    Frame two Duration: 2.75s
+---------------------------------------*/
+.frame2_text {
+  position: absolute;
+  width:100%;
+  top:80px;  
+  left:200px;
+  color: #444444;
+}
+
+.frame2_text1 {
+  font-size:22px;
+  line-height:26px;
+  letter-spacing: 0.1em;
+  text-align:center;
+  color: #444444;
+}
+
+.frame2_text2 {
+  font-size:16px;
+  line-height:20px;
+  letter-spacing: 0.1em;
+  text-align:center;
+  color: #444444;
+}
+.laptop-02 {
+  position: absolute;
+	top:50px;
+	left:95px;
+}
+.sheen {
+  position: absolute;
+	top:70px;
+	left:327px;
+	width:150px;
+	height:150px;
+    background-image: url(219241_au_cs_co_fy18q2w10_oa_firelord_tx_1000x250_iip_sheen.png);
+	background-repeat: no-repeat;
+	overflow:hidden !important;
+	opacity:0;
+}
+
+/* .web {
+  position: absolute;
+	top:50px;
+	left:227px;
+	width:200px;
+	height:215px;
+    background-position: -18px -72px;
+    background-image: url(219241_au_cs_co_fy18q2w10_oa_firelord_tx_1000x250_iip_web.png);
+	background-repeat: no-repeat;
+	overflow:hidden !important;
+} */
+.laptop-02-up {
+  position: absolute;
+  top:30px;
+  left:172px;
+}
+
+.buyNow1 {
+  position: absolute;
+  left: 270px;
+  top: 185px;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color:#007db8;  
+  z-index: 1; 
+}
+.buyNow1 span{
+  font-size: 21px;
+}
+
+/*-------------------------------------
+    Frame Three Duration: 2.75s
+---------------------------------------*/
+.laptop-03 {
+  position: absolute;
+  top:10px;
+  left:130px;
+  z-index: 2;
+}
+
+.spiderman {
+  position: absolute;
+	top:34px;
+	left:167px;
+	width:200px;
+	height:145px;
+    background-image: url(219241_au_cs_co_fy18q2w10_oa_firelord_tx_1000x250_iip_spiderman.png);
+	background-repeat: no-repeat;
+	overflow:hidden !important;
+  z-index: 3;
+}
+
+.frame3_text{
+  position: absolute;
+  width:100%;
+  top:80px;	
+  left:150px;
+  color: #444444;
+}
+
+.frame3_text1 {
+  font-size:22px;
+  line-height:26px;
+  letter-spacing: 0.1em;
+  text-align:center;
+  color: #444444;
+  
+}
+
+
+/*-------------------------------------
+    Frame four Duration: 6.75s
+---------------------------------------*/
+
+.frame4-text {
+  position: absolute;
+  width:100%;
+  top:20px;	
+  left:130px;
+  color: #444444;
+}
+
+
+.frame4-text1 {
+  font-size: 22px;
+  line-height: 26px;
+  letter-spacing: 0.1em;
+  text-align:center;
+  
+ }
+.frame4-text2 {
+  font-size: 16px;
+  line-height: 20px;
+  text-align:center;
+}
+
+/* .frame4-text2 sup {
+  font-size: 12px;
+  line-height: 8px;
+} */
+
+
+.buyNow {
+  position: absolute;
+  left: 345px;
+  top: 130px;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color:#007db8;  
+  z-index: 1; 
+}
+.buyNow span{
+  font-size: 21px;
+}
+
+.logo-spiderman {
+  position: absolute;
+  top: 89px;
+  left: 503px;
+}
+
+.frame4-text3 {
+  font-size: 9px;
+  text-align:center;
+  top:172px;
+  left:200px;
+	
+}
+
+.inTheaters {
+  position: absolute;
+	top: 148px;
+	left: 573px;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 10px;
+  letter-spacing: 0.05em;
+ 
+  
+}
+
+.date {
+  position: absolute;
+  top:127px;
+  right:42px;
+}
+
+.legal {
+  position: absolute;
+top: 165px;
+left: 512px;
+}
+
+
+/* Roll over start */
+
+#roll-cta {
+  position:absolute;
+  bottom: 110px;
+  right: 25px;
+  font-size: 12px;
+  line-height: 14px;
+  color: #000000;
+  z-index: 999;
+}
+
+.RollOver-text{
+  -webkit-animation: fade-in .5s 11.5s both;
+          animation: fade-in .5s 11.5s both;
+}
+
+#legal{
+  position: absolute;
+  top: -500px;
+  z-index: 3;
+  background:#eeeeee;
+  margin: 10px 0px;
+  width: 600px;
+  height: 110px;
+  z-index: 9999;
+}
+#legal-text{
+  position: absolute;
+  font-size: 12px;
+  line-height: 12px;
+  text-align:left;
+  color:#000000;
+  padding:5px;
+  width: 580px;
+}
+#legal-text div{
+  margin-bottom: 15px;
+}
+
+.legal-anim-in{
+  -webkit-animation: roll-over 0.5s ease-in both;
+       animation: roll-over 0.5s ease-in both;
+}
+
+.legal-anim-out{
+  -webkit-animation: roll-out 0.25s ease-out both;
+       animation: roll-out 0.25s ease-out both;
+}
+.all-anim-stop *{
+-webkit-animation-play-state:paused !important;
+     animation-play-state:paused !important;
+}
+
+
+/* Rollover*/
+
+@-webkit-keyframes roll-over {
+  0% {top: -300px;}
+  100%{top: -10px;}
+}
+@keyframes roll-over {
+  0% {top: -300px;}
+  100%{top: -10px;}
+}
+
+@-webkit-keyframes roll-out {
+  0% {top: -10px;}
+  100%{top: -300px;}
+}
+@keyframes roll-out {
+  0% {top: -10px;}
+  100%{top: -300px;}
+}
